@@ -8,3 +8,18 @@
     background-size: cover;
     backdrop-filter: blur(10px);
 }
+
+
+@media (max-width: 900px) {
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .home{
+        background-position-x: -150px;
+    }
+}

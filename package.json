@@ -1,6 +1,7 @@
 {
   "name": "untitled",
   "private": true,
+  "homepage":"https://github.com/tomasrome/untitled_demo/build",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
