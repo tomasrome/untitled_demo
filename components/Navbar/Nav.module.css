@@ -1,0 +1,42 @@
+
+
+.container{
+    position: sticky;
+    top: 0;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 700px;
+    z-index: 100;
+}
+
+.logo{
+    color: #e9e0d7;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    font-family: "PT Serif", serif;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    color: #e9e0d7;
+}
+
+.links li{
+    cursor: pointer;
+    transition: color .2s ease;
+    letter-spacing: 2px;
+}
+
+.links li:hover{
+    color: #f4caa9;
+}

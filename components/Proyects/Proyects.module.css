@@ -1,0 +1,64 @@
+
+.home{
+    width: 100%;
+    height: calc(100svh - 60px);
+    background-color: #e9e0d7;
+    background-image: url("../../src/imgs/backblur.jpg");
+    background-position-y: -280px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 50px;
+}
+
+.card{
+    max-width: 450px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.title{
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: underline;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.category{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffffff36;
+    border-radius: 50px;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}

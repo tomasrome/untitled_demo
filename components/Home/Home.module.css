@@ -1,0 +1,10 @@
+
+.home{
+    width: 100%;
+    height: calc(100svh - 60px);
+    background-color: #e9e0d7;
+    background-image: url("../../src/imgs/foto2.jpg");
+    background-position: bottom;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
