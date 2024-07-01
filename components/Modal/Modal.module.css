@@ -1,0 +1,94 @@
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal{
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    padding-top: 60px;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.modal p{
+    color: white;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio (9/16 * 100) */
+  height: 0;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color .2s ease;
+  }
+
+  .closeButton:hover {
+    color: rgb(185, 185, 185);
+  }
+
+
+  @media (max-width: 900px) {
+
+    .overlay{
+      width: 100vw;
+    }
+
+    .modal{
+      width: 95vw;
+      justify-content: space-around;
+    }
+
+    .video{
+      scale: 16/9;
+      width: 100%;
+    }
+
+}
+
+@media (min-width: 901px) {
+  .modal {
+    width: 60vw;
+    padding: 20px;
+  }
+
+  .videoContainer {
+    padding-bottom: 56.25%; /* Mantener la relación de aspecto 16:9 */
+    height: 0;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+}
