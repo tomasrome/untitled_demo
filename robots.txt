@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://tomasrome.github.io/untitled_demo/sitemap.xml
